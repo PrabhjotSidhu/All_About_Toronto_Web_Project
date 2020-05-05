@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+	
+	<head>
+		<title> Festivals and Events around Toronto </title>
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<script type="text/javascript" src="jquery.js"></script>
+		<script type="text/javascript">
+        $("document").ready(function() {
+
+        	$("#img1")
+	          .mouseover(function () {      
+	           this.src= "images/t1.jpg"
+	         }).mouseout(function () {      
+	            this.src= "images/light_festival.jpg"
+	        });
+
+	         $("#img2")
+	          .mouseover(function () {      
+	           this.src= "images/t2.jpg"
+	         }).mouseout(function () {      
+	            this.src= "images/music_festival.jpg"
+	        });
+
+	          $("#img3")
+	          .mouseover(function () {      
+	           this.src= "images/t3.jpg"
+	         }).mouseout(function () {      
+	            this.src= "images/christmas.jpg"
+	        });
+
+	          $("#img4")
+	          .mouseover(function () {      
+	           this.src= "images/t4.jpg"
+	         }).mouseout(function () {      
+	            this.src= "images/art_fair.jpg"
+	        });
+
+	          $("#img5")
+	          .mouseover(function () {      
+	           this.src= "images/t5.jpg"
+	         }).mouseout(function () {      
+	            this.src= "images/tiff.jpg"
+	        });
+		
+			$("header").css("margin-top","0px").css("margin-left","200px").css("text-align","center");
+			$("main").css("border-top","2px solid red").css("border-bottom","2px solid red");
+			//$("footer).css("text-align","center");
+			$("img").css("width","500px").css("height","300px");
+			const now=new Date();
+			$("#dateTimeConcept").html(now).css("font-style","italic");
+        });
+		
+		</script>
+		
+		<style>
+			
+			footer
+			{
+				text-align:center;
+			}
+			
+			#dateTimeConcept
+			{
+				text-align:center;
+			}
+		
+		</style>
+		
+	</head>
+	
+	<body>	
+			<ul class="nav">
+				<li><a href="home.html">Home</a></li>
+				<li><a href="about_toronto.html"> About Toronto</a></li>
+				<li><a href="places to visit in toronto.html">Places to visit in Toronto</a></li>	
+				<li><a href="studyinto.html"> Study in Toronto </a></li>
+				<li><a href="festivals_and_events.html"> Festivals and Events in Toronto</a></li>
+				<li><a href="start_business_toronto.html"> Starting a Business in Toronto</a></li>
+				<li><a href="housing_life_in_toronto.html"> Housing in Toronto</a></li>
+				<li><a href="services.html"> Services in Toronto</a></li>
+				<li><a href="tt.html"> The TTC</a></li>
+				<li><a href="login.html">login</a></li>
+				<li><a href="register.html"> Register</a></li>
+				<li><a href="feedback.html"> Feedback</a></li>
+				<li><a href="contact_us_page.html"> Contact Us</a></li>
+			</ul>
+		
+		
+		<header>
+			<h1> Annual Festivals and Events in Toronto </h1>
+		</header>	
+			
+		<main>
+			<p> Every year, Toronto hosts plethora of major events, including cultural
+			programs and celebrations to highlight the vibrant and diverse nature of the city,
+			thereby attracting tourists from around the world and even promoting local and 
+			national artists.</p><br>
+		
+		
+		<h2>The Toronto Light Festival </h2>
+		
+		<img src="images/light_festival.jpg" id="img1">
+		
+		<p> Illuminating the long winter nights with distinct works from  both the local and 
+		international light artists, the Toronto Light Festival lights up the Distillery Historic  
+		District from January to March. Visitors are taken on a eye-catching journey as the festival 
+		transforms the picturesque historic neighbourhood into a large open-air gallery.</p>
+		
+		
+		
+		
+		<br><br><h2> Toronto Summer Music Festival </h2>
+		
+		<img src="images/music_festival.jpg" id="img2">
+		
+		<p> Entering into its 12th season, Toronto Summer Music Festival (TSM) is one of the city’s 
+		most eagerly-awaited classical music event with concerts performed by Canadian and 
+		international artists, along with guest lectures and masterclasses.</p>
+		
+		
+		
+		
+		<br><br><h2> Christmas Day </h2>
+		
+		<img src="images/christmas.jpg" id="img3">
+		
+		<p> Being celebrated all over Canada and around the world, the grace and beauty of this 
+		festival in Toronto is something worth seeing. The Santa Claus Parade in Toronto is one 
+		of the oldest and largest Santa parades in the world. Celebrated on the 25th of December 
+		every year, this festival commemorates the birth of Jesus Christ.</p>
+		
+		
+		
+		
+		<br><br><h2> Toronto Outdoor Art Fair </h2>
+		
+		<img src="images/art_fair.jpg" id="img4">
+		
+		<p> The Toronto Outdoor Art Fair offers a free and fresh-air alternative to conventional
+		art shows and galleries. Over 300 artists participate and 100,000 visitors attend this 
+		fair every year. Moreover, established artists, undiscovered talents and innovative 
+		students showcase and sell their work directly to the public. It’s the best way to make 
+		connections with artists and their work. </p>
+		
+		
+		
+		
+		<br><br><h2> Toronto International Film Festival </h2>
+		
+		<img src="images/tiff.jpg" id="img5">
+		
+		<p> The biggest and brightest public film festival in the world takes over Toronto each 
+		September with world premieres, cutting-edge film, galas and industry schmoozes. Whether you’re a cinephile or just love to see the celebrities, Toronto during TIFF is the place to be. </p>
+		<br><br>
+		<p id="dateTimeConcept"></p>
+		
+		</main>
+		
+		
+		
+		<footer>
+		<p> References : https://www.seetorontonow.com/annual-events/ </p>
+		</footer>
+	</body>
+
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Resgistration</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+		<ul class="nav">
+				<li><a href="home.html">Home</a></li>
+				<li><a href="about_toronto.html"> About Toronto</a></li>
+				<li><a href="places to visit in toronto.html">Places to visit in Toronto</a></li>	
+				<li><a href="studyinto.html"> Study in Toronto </a></li>
+				<li><a href="festivals_and_events.html"> Festivals and Events in Toronto</a></li>
+				<li><a href="start_business_toronto.html"> Starting a Business in Toronto</a></li>
+				<li><a href="housing_life_in_toronto.html"> Housing in Toronto</a></li>
+				<li><a href="services.html"> Services in Toronto</a></li>
+				<li><a href="tt.html"> The TTC</a></li>
+				<li><a href="login.html">login</a></li>
+				<li><a href="register.html"> Register</a></li>
+				<li><a href="feedback.html"> Feedback</a></li>
+				<li><a href="contact_us_page.html"> Contact Us</a></li>
+			</ul>
+
+		<main>
+
+			<h2>Registration Form</h2>
+			<form method="post"  name="regform" action="login.html"  onsubmit = "return(validate());" style="border:2px solid red; padding:10px;">
+				<table>
+				      <tr> 
+					      <td><b> First Name: </b></td>
+						  <td> <input type = "text" name = "fname" placeholder="Enter your first name" id="fn"> </td>
+					  </tr>
+					  <tr>
+					      <td><b> Last Name: </b></td>
+						  <td> <input type = "text" name = "lname" placeholder="Enter your last name" id="ln"> </td>
+					  </tr>
+					  <tr>
+					      <td><b> Username: </b></td>
+						  <td> <input type = "text" name = "uname" minlength="8" placeholder="Enter unique username" id="un"> </td>
+					  </tr>
+					  <tr>
+					      <td><b> Email: </b></td>
+						  <td> <input type = "email" name = "email" placeholder="Enter your email" id="email"> </td>
+					  </tr>
+					  <tr>   
+		                  <td><b> Password : </b></td>
+		                  <td> 
+		                  	<input name = "password" type = "password" minlength="8" placeholder="Enter 8 digit/char password " id="pass1"> 
+		                  </td>
+					  </tr>
+					  <tr>
+		                  <td><b> Confirm password: </b></td>
+		                  <td> <input type = "password" name ="cpassword" placeholder="Confirm password" id="pass2"> </td>
+					  </tr>
+					  <tr>
+					      <td><b> Gender: </b></td>
+						  <td> <input type = "radio" name = "gender" checked> Male <br>
+		                       <input type = "radio" name = "gender"> Female<br>
+		                       <input type = "radio" name = "gender"> Others<br> 
+		                  </td>
+					  </tr>
+					  
+					  <tr>
+					      <td><b> Address: </b></td>
+						  <td>
+						  		<textarea rows="2" cols="22" name="addr" minlength="10" maxlength="50" placeholder="Enter your address" id="add"></textarea>
+						  </td>
+					  </tr>
+					  <tr>
+					      <td><b> Postal code: </b></td>
+						  <td> <input type = "text" name = "Postal" minlength="6" placeholder="Enter your postal code" id="pc"> </td>
+					  </tr>
+					  <tr>
+					      <td><b> Province: </b></td>
+						  <td> <input type = "text" name = "Province" placeholder="Enter your province" id="pv"> </td>
+				               
+				               </select> </td>
+					  </tr>
+					  <tr>
+					      <td><b> Country: </b></td>
+						  <td>
+						   		<select name = "country">
+					               <option value = "usa" selected> USA</option>
+					               <option value = "aus"> Australia</option>
+					               <option value = "uk"> United Kingdom</option>
+					               <option value = "can" > Canada </option>
+					               <option value = "ind" > India </option>
+				            	</select> 
+				           </td>
+					  </tr>
+					  <tr>
+					  	<td>   </td>
+					  </tr>
+		              <tr>
+		              	<td align="right"><input type="submit" name = "smtbtn1" value="Submit"></td>
+						<td><input type="reset" name="rstbtn2" value="Reset"></td>
+		              </tr>
+				</table>
+				
+			</form>
+		</main>
+
+		<script type="text/javascript">
+			function validate() {
+			// body...
+
+				fname=document.getElementById('fn').value;
+				if(fname==""){
+					alert("ENTER CORRECT FIRSTNAME!");
+					return false;
+				}
+
+				lname=document.getElementById('ln').value;
+				if (lname=="") {
+					alert("ENTER CORRECT LASTNAME!");
+					return false;
+				}
+
+				usrname=document.getElementById('un').value;
+				if (usrname=="") {
+					alert("ENTER CORRECT USERNAME!");
+					return false;
+				}
+
+				email1=document.getElementById('email').value;
+				if (email1=="") {
+					alert("ENTER CORRECT EMAIL!");
+					return false;
+				}
+
+				pswd1=document.getElementById('pass1').value;
+				if (pswd1=="") {
+					alert("ENTER YOUR PASSWORD!");
+					return false;
+				}
+
+				pswd2=document.getElementById('pass2').value;
+				if (pswd2=="") {
+					alert("CONFIRM YOUR PASSWORD!");
+					return false;
+				}
+
+				if (pswd1!=pswd2) {
+					alert("YOUR PASSWORD DO NOT MATCH!");
+					return false;
+				}
+
+				
+
+				add1=document.getElementById('add').value;
+				if (add1=="") {
+					alert("ENTER CORRECT ADDRESS!");
+					return false;
+				}
+
+				poscode=document.getElementById('pc').value;
+				if (poscode=="") {
+					alert("ENTER CORRECT POSTAL CODE!");
+					return false;
+				}
+
+				prv=document.getElementById('pv').value;
+				if (prv=="") {
+					alert("ENTER YOUR PROVINCE!");
+					return false
+				}
+
+			}
+		</script>
+</body>
+</html>

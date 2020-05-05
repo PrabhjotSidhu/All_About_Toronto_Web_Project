@@ -1,0 +1,27 @@
+		* {
+			  box-sizing: border-box;
+			}
+			tr.a{
+			  width: 100%;
+			  padding: 12px;
+			  border: 1px solid #ccc;
+			  border-radius: 4px;
+			}
+			tr.d{
+				width: 100%;
+			  padding: 12px;
+			  border: 1px solid #ccc;
+			  border-radius: 4px;
+
+			}
+			
+			input,select{
+			  width: 100%;
+			  padding: 12px;
+			  border: 1px solid #ccc;
+			  border-radius: 4px;
+			}
+
+			tr.l:hover {
+			  background-color: #45a049;
+			}

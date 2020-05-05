@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>The City Of Toronto</title>
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		
+		<script type="text/javascript" src="jquery.js"></script>
+		<script type="text/javascript">
+	        $("document").ready(function() {
+				$("#img1")
+	          .mouseover(function () {      
+	           this.src= "images/home1.jpg"
+	         }).mouseout(function () {      
+	            this.src= "images/mapoftoronto.JPG"
+	        });
+	     
+			$("header").css("margin-top","0px").css("margin-left","200px").css("text-align","center");
+			$("main").css("border-top","2px solid red").css("border-bottom","2px solid red");
+			//$("footer).css("text-align","center");
+			$("img").css("width","600px").css("height","400px");
+			const now=new Date();
+			$("#dateTimeConcept").html(now).css("font-style","italic");
+        });
+		
+		</script>
+		
+		<style>
+			
+			footer
+			{
+				text-align:center;
+			}
+			
+			#dateTimeConcept
+			{
+				text-align:center;
+			}
+			
+			/*header
+			{
+				margin-top:0px;
+				margin-left:200px;
+				text-align:center;
+			}
+			
+			main
+			{
+				border-top:2px solid red;
+				border-bottom:2px solid red;
+			
+			}
+			
+			footer
+			{
+				text-align:center;
+			}
+			
+			img
+			{
+				width:600px;
+				height:400px;
+			}*/
+		
+		</style>
+		
+	</head>
+	
+	<body>
+			<ul class="nav">
+				<li><a href="home.html">Home</a></li>
+				<li><a href="about_toronto.html"> About Toronto</a></li>
+				<li><a href="places to visit in toronto.html">Places to visit in Toronto</a></li>	
+				<li><a href="studyinto.html"> Study in Toronto </a></li>
+				<li><a href="festivals_and_events.html"> Festivals and Events in Toronto</a></li>
+				<li><a href="start_business_toronto.html"> Starting a Business in Toronto</a></li>
+				<li><a href="housing_life_in_toronto.html"> Housing in Toronto</a></li>
+				<li><a href="services.html"> Services in Toronto</a></li>
+				<li><a href="tt.html"> The TTC</a></li>
+				<li><a href="login.html">login</a></li>
+				<li><a href="register.html"> Register</a></li>
+				<li><a href="feedback.html"> Feedback</a></li>
+				<li><a href="contact_us_page.html"> Contact Us</a></li>
+			</ul>
+		
+		
+		<header>	
+			<h1><center> Toronto ... The Capital of Ontario </center></h1>
+		</header>	
+	<main>
+			<p>
+				Toronto is Canada’s largest city and a world leader in business, finance, technology, entertainment,
+				and culture. Its large population of immigrants from all over the globe has also made Toronto one of the 
+				most multicultural cities in the world. 
+	        </p>
+			
+			<div><b><i> Quick facts about Toronto </i></b></div>
+			<p>
+				<ol>
+				   <li>307 km of rivers and creeks run through the city flowing into Lake Ontario.</li>		
+				   <li> There are more than 1,600 named parks comprising more than 8,000 hectares of land <br>
+				   (ravines, valleys, woodlots, parks, beaches, golf courses, and parkettes).</li>
+				   <li>The City of Toronto owns and operates nearly 100,000 housing units.</li>
+				   <li>Meeting new people</li>
+				   <li>There were more than 206,000 businesses in Toronto in 2019.</li>
+				   <li>With its highly iconic landmark of the CN Tower gracing its skyline,<br> 
+				   Toronto is also famous for its beautiful lake scenery with much of the city <br>
+				   straddling and rising up against the gorgeous Lake Ontario.</li>
+				 </ol>  
+	        </p>
+			
+			<div><b><i> About the Toronto Area </i></b></div>
+			
+			<p>
+			Located on a broad sloping plateau cut by numerous river valleys, Toronto covers 641 square kilometres 
+			and stretches 43 kilometres from east to west and 21 kilometres from north to south at its longest points.
+	        The City of Toronto sits at the centre of a larger metropolitan area called the Greater Toronto Area (GTA), 
+			also known as the Toronto Census Metropolitan Area (CMA) by Statistics Canada, with slightly different boundaries.
+			</p>
+			
+			<center><img id="img1" src="images/mapoftoronto.JPG" width="500px" height="300px"></center><br>
+			
+			<br><br>
+		<p id="dateTimeConcept"></p>
+			
+	</main>
+		
+</body>
+</html>
+				

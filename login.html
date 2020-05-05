@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Log In</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	
+</head>
+<body>
+			<ul class="nav">
+				<li><a href="home.html">Home</a></li>
+				<li><a href="about_toronto.html"> About Toronto</a></li>
+				<li><a href="places to visit in toronto.html">Places to visit in Toronto</a></li>	
+				<li><a href="studyinto.html"> Study in Toronto </a></li>
+				<li><a href="festivals_and_events.html"> Festivals and Events in Toronto</a></li>
+				<li><a href="start_business_toronto.html"> Starting a Business in Toronto</a></li>
+				<li><a href="housing_life_in_toronto.html"> Housing in Toronto</a></li>
+				<li><a href="services.html"> Services in Toronto</a></li>
+				<li><a href="tt.html"> The TTC</a></li>
+				<li><a href="login.html">login</a></li>
+				<li><a href="register.html"> Register</a></li>
+				<li><a href="feedback.html"> Feedback</a></li>
+				<li><a href="contact_us_page.html"> Contact Us</a></li>
+			</ul>
+	<main>
+		<h2>Log-in Credentials</h2>
+		<form name="login" method="get" action="home.html"  onsubmit = "return(validate());" style="border:2px solid red; padding:10px;">
+		<table>
+			<tr>
+				<td>User Name:</td>
+				<td><input type="text" name="uname" minlength="8" id="un"></td>
+				<td><span id="1"></span></td> 
+			</tr>
+			<tr>
+				<td>Password:</td>
+				<td><input type="Password" name="pass" minlength="8" id="pass"></td> <span id="2"></span>
+			</tr>
+			<tr>
+				<td align="center"><input type="submit" name="sbtn1" value="Log In" ></td>
+				<td ><input type="reset" name="rbtn2" value="Reset"></td>
+			</tr>
+			<tr>
+				<td colspan="2">New user <a href="register.html">Click here to register</a></td>
+			</tr>
+		</table>
+
+		<script type="text/javascript">
+			function validate() {
+				// body...
+				usrname=document.getElementById('un').value;
+				if (usrname=="") {
+					alert("ENTER CORRECT USERNAME!");
+					return false;
+				}
+
+				pswd=document.getElementById('pass').value;
+				if (pswd=="") {
+					alert("ENTER CORRECT PASSWORD!");
+					return false;
+				}
+			}
+		</script>
+	</form>
+	</main>
+
+</body>
+</html>

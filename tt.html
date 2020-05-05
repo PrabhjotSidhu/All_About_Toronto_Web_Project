@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Transportation facility in Toronto</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<script type="text/javascript" src="jquery.js"></script>
+		<script type="text/javascript">
+        $("document").ready(function() {
+			
+        	$("#img1")
+	          .mouseover(function () {      
+	           this.src= "images/tb.jpg"
+	         }).mouseout(function () {      
+	            this.src= "images/ttc.jpg"
+	        });
+
+	         $("#img2")
+	          .mouseover(function () {      
+	           this.src= "images/ts.jpg"
+	         }).mouseout(function () {      
+	            this.src= "images/ttcs.jpg"
+	        });
+
+	          $("#img3")
+	          .mouseover(function () {      
+	           this.src= "images/tc.jpg"
+	         }).mouseout(function () {      
+	            this.src= "images/ttcsc.jpg"
+	        });
+
+			const now=new Date();
+			$("#dateTimeConcept").html(now).css("font-style","italic");
+        });
+		
+		</script>
+	<style>
+			
+			footer
+			{
+				text-align:center;
+			}
+			
+			#dateTimeConcept
+			{
+				text-align:center;
+			}
+			
+			header
+			{
+				margin-top:0px;
+				margin-left:200px;
+				text-align:center;
+			}
+			
+			main
+			{
+				border-top:2px solid red;
+				border-bottom:2px solid red;
+				
+			}
+			
+			footer
+			{
+				text-align:center;
+			}
+			
+			img
+			{
+				width:500px;
+				height:300px;
+			}
+		
+		</style>
+		
+		
+</head>
+<body>
+		
+			<ul class="nav">
+				<li><a href="home.html">Home</a></li>
+				<li><a href="about_toronto.html"> About Toronto</a></li>
+				<li><a href="places to visit in toronto.html">Places to visit in Toronto</a></li>	
+				<li><a href="studyinto.html"> Study in Toronto </a></li>
+				<li><a href="festivals_and_events.html"> Festivals and Events in Toronto</a></li>
+				<li><a href="start_business_toronto.html"> Starting a Business in Toronto</a></li>
+				<li><a href="housing_life_in_toronto.html"> Housing in Toronto</a></li>
+				<li><a href="services.html"> Services in Toronto</a></li>
+				<li><a href="tt.html"> The TTC</a></li>
+				<li><a href="login.html">login</a></li>
+				<li><a href="register.html"> Register</a></li>
+				<li><a href="feedback.html"> Feedback</a></li>
+				<li><a href="contact_us_page.html"> Contact Us</a></li>
+			</ul>
+	
+		<header>
+			<h1>Toronto Transit Commission (TTC)</h1>
+		</header>
+		
+	<main>		
+			<p>
+				<b>
+					The Toronto Transit Commission (TTC) is the public transport agency that operates bus, subway, and streetcar services in Toronto, Ontario, Canada. It is the oldest and largest of the urban transit service providers in the Greater Toronto Area, with numerous connections to systems serving its surrounding municipalities.
+				</b>
+			</p>
+			<ol>
+				<li>
+					<p><b>TTC Bus</b></p>
+					<img src="images/ttc.jpg" id="img1" width="250" height="300">
+					<p>
+						 The TTC has more than 172 bus routes in operation, and served over 264 million riders in 2018.[2] Most bus routes serve the suburban areas of the city, and are tightly integrated with the subway system, with free transfers between the two systems, and most suburban subway stations equipped with bus terminals located within the fare paid area. Several routes run into Downtown Toronto, where buses are less used and the area is instead served by the TTC's streetcar system.
+					</p>
+				</li>
+				<li>
+					<p><b>TTC Subway</b></p>
+					<img src="images/ttcs.jpg" id="img2" width="250" height="300">
+					<p>
+						subway lines provide service seven days a week from approximately 5:45 a.m. to 1:30 a.m. (the following day) (last train runs at approximately 1:45 in each direction) except for Sundays, in which the opening is delayed until approximately 8:00 a.m. During the overnight periods, the subway and its stations are closed to perform maintenance at track level and in the stations themselves. Overnight service is provided by buses and streetcars operating above ground. These overnight routes are issued numbers in the 300 series and are referred to as Blue Night routes, indicated by a typical TTC bus stop sign with a blue band added.
+					</p>
+				</li>
+				<li>
+					<p><b>TTC Streetcars</b></p>
+					<img src="images/ttcsc.jpg" id="img3" width="250" height="300">
+					<p>
+						Toronto's streetcar system is one of the few in North America still operating along street-running tracks. It has been operating since the mid-19th century. Horsecar service started in 1861, and 600 V DC overhead electric service began in 1892. New TTC routes since the 1940s have generally been operated by other modes of transportation, and the less busy streetcar routes have also been converted. Streetcar routes are now focused on the downtown area, with none running farther north than St. Clair Avenue, 6 kilometres (3.7 mi) from Lake Ontario.
+					</p>
+				</li>
+			</ol>
+			<br><br>
+		<p id="dateTimeConcept"></p>
+		</main>
+	<footer>
+		<p><b>
+			Content source="https://en.wikipedia.org/wiki/Toronto_Transit_Commission"
+		</b></p>
+		<p><b>
+			Image source="www.google.com"
+		</b></p>
+	</footer>
+</body>
+</html>

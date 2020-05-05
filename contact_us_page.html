@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+	
+	<head>
+		<title> Contact Us </title>
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		
+		<style>
+			
+			body
+			{
+				width:1250px;
+			}
+			
+			img
+			{
+				width:350px;
+				height:400px;
+			}
+			
+			header
+			{
+				margin-top:0px;
+				text-align:center;
+			}
+			
+			main
+			{
+				border:2px solid red;
+				width:700px;
+				padding:20px;
+				margin-bottom:70px;
+				margin-right:20px;
+			}
+			
+			aside
+			{
+				float:right;
+				margin-right:370px;
+				margin-top:100px;
+				width:300px;
+				height:500px;
+			}
+			
+			
+		</style>
+		
+	</head>
+	
+	<body>
+		
+			<ul class="nav">
+				<li><a href="home.html">Home</a></li>
+				<li><a href="about_toronto.html"> About Toronto</a></li>
+				<li><a href="places to visit in toronto.html">Places to visit in Toronto</a></li>	
+				<li><a href="studyinto.html"> Study in Toronto </a></li>
+				<li><a href="festivals_and_events.html"> Festivals and Events in Toronto</a></li>
+				<li><a href="start_business_toronto.html"> Starting a Business in Toronto</a></li>
+				<li><a href="housing_life_in_toronto.html"> Housing in Toronto</a></li>
+				<li><a href="services.html"> Services in Toronto</a></li>
+				<li><a href="tt.html"> The TTC</a></li>
+				<li><a href="login.html">login</a></li>
+				<li><a href="register.html"> Register</a></li>
+				<li><a href="feedback.html"> Feedback</a></li>
+				<li><a href="contact_us_page.html"> Contact Us</a></li>
+			</ul>
+		
+		<form method="get" name="form1"  action="home.html" onsubmit = "return(validate());" >
+		
+		
+		<header>
+			<h2 style="margin-top:0px;">Having any Question?</h2><br>
+		</header>
+		
+		<aside>
+			<img src="images/contact_us.jpg">
+		</aside>
+		
+		<main>
+		<h3><i>Please feel free to contact us. We are here to help.</i></h3>
+		<br>E-mail : n01390392@humbermail.ca
+		<br><br>Phone : 647-777-7777
+		<br><br><br><br>
+		
+		
+		<h2><i> Enquiry Form </i></h2>
+		<table>
+			<tr>
+				<td> Name  </td>
+				<td> <input type="text" name="name" id="nm" autofocus> </td>
+			</tr>
+			
+			<tr>
+				<td> E-mail  </td>
+				<td> <input type="email" name="email" id="em"> </td>
+			</tr>
+			
+			<tr>
+				<td> Question  </td>
+				<td> 
+					<textarea rows="5" cols="20" id="que" placeholder="Enter your question here"></textarea>
+						
+				</td>
+			</tr>
+			
+		</table>
+		<br>
+		
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<input type="submit" name="btn" value="submit">
+		</form>
+		</main>
+
+		<script type="text/javascript">
+			function validate() {
+				// body...
+				name=document.getElementById('nm').value;
+				if (name=="") {
+					alert("ENTER CORRECT NAME!");
+					return false;
+				}
+
+				email1=document.getElementById('em').value;
+				if (email1=="") {
+					alert("ENTER CORRECT EMAIL!");
+					return false;
+				}
+
+				ques=document.getElementById('que').value;
+				if (ques=="") {
+					alert("PLEASE ENTER YOUR QUESTION!");
+					return false;
+				}
+			}
+		</script>
+		
+	</body>
+
+</html>

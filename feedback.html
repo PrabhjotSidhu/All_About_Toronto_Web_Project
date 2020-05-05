@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Survey</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	
+</head>
+<body>
+			<ul class="nav">
+				<li><a href="home.html">Home</a></li>
+				<li><a href="about_toronto.html"> About Toronto</a></li>
+				<li><a href="places to visit in toronto.html">Places to visit in Toronto</a></li>	
+				<li><a href="studyinto.html"> Study in Toronto </a></li>
+				<li><a href="festivals_and_events.html"> Festivals and Events in Toronto</a></li>
+				<li><a href="start_business_toronto.html"> Starting a Business in Toronto</a></li>
+				<li><a href="housing_life_in_toronto.html"> Housing in Toronto</a></li>
+				<li><a href="services.html"> Services in Toronto</a></li>
+				<li><a href="tt.html"> The TTC</a></li>
+				<li><a href="login.html">login</a></li>
+				<li><a href="register.html"> Register</a></li>
+				<li><a href="feedback.html"> Feedback</a></li>
+				<li><a href="contact_us_page.html"> Contact Us</a></li>
+			</ul>
+	<main>
+		<h2>Please Complete Our Survey</h2>
+		<form name="survey" method="get" action="home.html"  onsubmit = "return(validate());" style="border:2px solid red; padding:10px; ">
+			<table>
+				
+				<tr>
+					<td> <b>Email Address:</b></td>
+					<td><input type="Email" name="email" id="email"></td>
+				</tr>
+				<tr>
+					<td><b>First Name:</b></td>
+					<td><input type="text" name="fname" id="fn"></td>
+				</tr>
+				<tr>
+					<td><b>Last Name:</b></td>
+					<td><input type="text" name="lname" id="ln"></td>
+				</tr>
+			</table><br>
+			<table>
+				<tr>
+					<td><b>Comments:</b></td>
+					<td>
+						<textarea rows="2" cols="20" placeholder="Enter your comments" id="com"></textarea>
+					</td>
+				</tr>
+			</table><br>
+			<table>
+				<tr><b>How did you hear about us?</b></tr>
+				<tr>
+					<td><b>Web Search:</b></td>
+					<td><input type="checkbox" name="ch1"></td>
+				</tr>
+				<tr>
+					<td><b>Facebook:</b></td>
+					<td><input type="checkbox" name="ch2"></td>
+				</tr>
+				<tr>
+					<td ><b>Twitter:</b></td>
+					<td><input type="checkbox" name="ch3"></td>
+				</tr>
+				<tr>
+					<td ><b>Email Message:</b></td>
+					<td><input type="checkbox" name="ch4"></td>
+				</tr>
+			</table><br>
+
+			<table>
+				<tr><b>Thank you for taking our survey!</b></tr>
+				<tr>
+					<td align="center"><input type="submit" name="sbtn1" value="Submit"></td>
+					<td align="center"><input type="reset" name="rbtn2" value="Reset"></td>
+				</tr>
+			</table>
+			
+		</form>
+	</main>
+	
+
+	<script type="text/javascript">
+		function validate() {
+			// body...
+			email1=document.getElementById('email').value;
+			if (email1=="") {
+				alert("ENTER CORRECT EMAIL!");
+				return false;
+			}
+
+			fname=document.getElementById('fn').value;
+			if(fname==""){
+				alert("ENTER CORRECT FIRSTNAME!");
+				return false;
+			}
+
+			lname=document.getElementById('ln').value;
+			if (lname=="") {
+				alert("ENTER CORRECT LASTNAME!");
+				return false;
+			}
+
+			comment=document.getElementById('com').value;
+			if(comment==""){
+				alert("PLEASE ENTER THE COMMENT!");
+				return false;
+			}
+		}
+	</script>
+</body>
+</html>
